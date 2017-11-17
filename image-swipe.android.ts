@@ -479,11 +479,12 @@ class OrientationListener extends android.view.OrientationEventListener {
 
         return __native(this);
     }
-
+    // TODO: use on configurationChanged instead ... https://stackoverflow.com/questions/5726657/how-to-detect-orientation-change-in-layout-in-android
     public onOrientationChanged(orientation: number) {
         const zoomImageView: ZoomImageView = this._zoomImageView.get();
         if (zoomImageView) {
-            zoomImageView.reset(true);
+            // TODO: 
+            //zoomImageView.reset(true);
         }
     }
 }
